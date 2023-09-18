@@ -128,7 +128,7 @@ class ActorCriticSac:
             self._input_Q1 = input_Q  # exposed for tests
             self.Q2_tf = nn(input_Q, [self.hidden] * self.layers + [1], reuse=True) # to train the critic
 
-        if self.scope != 'sac0':
+        if self.scope != 'ddpg0':
             if self.predictor_loss and self.adversarial_loss:
                 with tf.compat.v1.variable_scope('discriminator'):
                     discriminator_o = input_pi

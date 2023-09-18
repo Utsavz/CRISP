@@ -6,7 +6,7 @@ import sys
 sys.path.append('../crisp/')
 
 from baselines import logger
-from sac import SAC
+from ddpg import DDPG
 from her import make_sample_her_transitions
 
 
@@ -34,7 +34,7 @@ DEFAULT_PARAMS = {
     'polyak': 0.8,  # polyak averaging coefficient
     'action_l2': 1.0,  # quadratic penalty on actions (before rescaling by max_u)
     'clip_obs': 200.,
-    'scope': 'sac',  # can be tweaked for testing
+    'scope': 'ddpg',  # can be tweaked for testing
     'relative_goals': False,
     # training
     'n_cycles': 1,  # per epoch
@@ -90,7 +90,7 @@ def cached_make_env(make_env):
     return env
 
 def prepare_params(kwargs):
-    # SAC params
+    # DDPG params
     ddpg_params = dict()
     env_name = kwargs['env_name']
 
@@ -218,7 +218,7 @@ def configure_ddpg(dims, params, hrl_scope, populate, bc_loss, bc_loss_upper, ad
     ddpg_params = params['ddpg_params']
     gamma = params['gamma']
     input_dims = dims.copy()
-    # SAC agent
+    # DDPG agent
     env = cached_make_env(params['make_env'])
     env.reset()
     ddpg_params.update({'input_dims': input_dims,  # agent takes an input observations
@@ -253,7 +253,7 @@ def configure_ddpg(dims, params, hrl_scope, populate, bc_loss, bc_loss_upper, ad
         'env_name': params['env_name'],
     }
     ddpg_params['scope'] = hrl_scope
-    policy = SAC(reuse=reuse, **ddpg_params, use_mpi=use_mpi)
+    policy = DDPG(reuse=reuse, **ddpg_params, use_mpi=use_mpi)
     return policy
 
 

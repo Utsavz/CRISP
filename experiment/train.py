@@ -239,7 +239,7 @@ def launch(env, logdir, n_epochs, num_cpu, seed, populate, num_hrl_layers, bc_lo
     dims = config.configure_dims(params) # {'o': 10, 'u': 4, 'g': 3, 'info_is_success': 1}
     policyList = []
     for layer_num in range(num_layers):
-        hrl_scope = 'sac' + str(layer_num)
+        hrl_scope = 'ddpg' + str(layer_num)
         params['hrl_scope'] = hrl_scope
         policy = config.configure_ddpg(dims=dims, params=params, hrl_scope = hrl_scope, 
             populate=populate, bc_loss=bc_loss, bc_loss_upper=bc_loss_upper, adversarial_loss=adversarial_loss, hac=hac, dac=dac)
