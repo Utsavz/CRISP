@@ -1,5 +1,5 @@
 ## CRISP ##
-#### Code repository for CRISP: Curriculum inducing Primitive Informed Subgoal Prediction ####
+### Code repository for CRISP: Curriculum inducing Primitive Informed Subgoal Prediction ###
 
 This is a tensorflow based implementation for our approach: Curriculum inducing Primitive Informed Subgoal Prediction. The approach deals with non-stationarity in hierarchical reinforcement learning by generating primitive informed subgoal dataset for higher level, and subsequently applying inverse reinforcement learning regularization with the reinforcement learning objective.
 
