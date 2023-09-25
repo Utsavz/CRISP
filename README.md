@@ -1,7 +1,7 @@
 ## CRISP ##
 ### Code repository for CRISP: Curriculum inducing Primitive Informed Subgoal Prediction ###
 
-<img src="figs/crisp_main_page.gif" width="300">
+<img src="figs/crisp_main_page.gif" width="500">
 
 This is a tensorflow based implementation for our approach: Curriculum inducing Primitive Informed Subgoal Prediction. The approach deals with non-stationarity in hierarchical reinforcement learning by generating primitive informed subgoal dataset for higher level, and subsequently applying inverse reinforcement learning regularization with the reinforcement learning objective.
 
@@ -91,19 +91,19 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
 #### 4). Results: Success rate performance
 
   Maze navigation environment
-  <img src="figs/maze_margin_success_rate.pdf" width="300">
+  <img src="figs/maze_margin_success_rate.png" width="500">
 
   Pick and place environment
-  <img src="figs/pick_margin_success_rate.pdf" width="300">
+  <img src="figs/pick_margin_success_rate.png" width="500">
 
   Bin environment
-  <img src="figs/bin_margin_success_rate.pdf" width="300">
+  <img src="figs/bin_margin_success_rate.png" width="500">
 
   Hollow environment
-  <img src="figs/hollow_margin_success_rate.pdf" width="300">
+  <img src="figs/hollow_margin_success_rate.png" width="500">
 
   Rope manipulation environment
-  <img src="figs/rope_margin_success_rate.pdf" width="300">
+  <img src="figs/rope_margin_success_rate.png" width="500">
 
   Franka kitchen environment
-  <img src="figs/kitchen_margin_success_rate.pdf" width="300">
+  <img src="figs/kitchen_margin_success_rate.png" width="500">
