@@ -1,5 +1,5 @@
-## CRISP ##
-### Code repository for CRISP: Curriculum inducing Primitive Informed Subgoal Prediction ###
+# CRISP #
+## Code repository for CRISP: Curriculum inducing Primitive Informed Subgoal Prediction ###
 
 <img src="figs/crisp_main_page.gif" width="500">
 
@@ -19,7 +19,7 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
   bash download.sh
   ```
 
-#### 2). Running demo
+### 2). Running demo
   ```Shell
   # For Maze navigation environment
   python experiment/play.py --dir=maze_crisp_0 --render=1 --rollouts=10
@@ -42,7 +42,7 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
 
   ```
 
-#### 3). Training code
+### 3). Training code
   ```Shell
   # For Maze navigation environment
   python experiment/train.py --env="FetchMazeReach-v1" --logdir="pick_crisp_0" --n_epochs=2100 --num_cpu=1 --seed=0 --bc_loss=1 --bc_loss_upper=1  --adversarial_loss=1 --num_hrl_layers=2 --populate=1
@@ -65,7 +65,7 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
   
   ```
 
-#### 3). Plot progress
+### 3). Plot progress
   ```Shell
   # For Maze navigation environment
   python experiment/plot.py --dir1=maze_crisp_0:crisp --plot_name="maze"
@@ -88,28 +88,28 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
   
   ```
 
-#### 4). Results: Success rate performance
+### 4). Results: Success rate performance
 
-  Maze navigation environment
+  #### Maze navigation environment
 
   <img src="figs/maze_margin_success_rate.png" width="500">
 
-  Pick and place environment
+  #### Pick and place environment
 
   <img src="figs/pick_margin_success_rate.png" width="500">
 
-  Bin environment
+  #### Bin environment
 
   <img src="figs/bin_margin_success_rate.png" width="500">
 
-  Hollow environment
+  #### Hollow environment
 
   <img src="figs/hollow_margin_success_rate.png" width="500">
 
-  Rope manipulation environment
+  #### Rope manipulation environment
 
   <img src="figs/rope_margin_success_rate.png" width="500">
 
-  Franka kitchen environment
-  
+  #### Franka kitchen environment
+
   <img src="figs/kitchen_margin_success_rate.png" width="500">
