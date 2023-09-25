@@ -1,5 +1,5 @@
-# CRISP: Curriculum inducing Primitive Informed Subgoal Prediction
-## Code repository for CRISP
+## CRISP: Curriculum inducing Primitive Informed Subgoal Prediction
+### Code repository for CRISP
 
 <img src="figs/crisp_main_page.gif" width="500">
 
