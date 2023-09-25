@@ -1,10 +1,12 @@
 ## CRISP ##
 ### Code repository for CRISP: Curriculum inducing Primitive Informed Subgoal Prediction ###
 
+<img src="figs/pear_main_page.gif" width="300">
+
 This is a tensorflow based implementation for our approach: Curriculum inducing Primitive Informed Subgoal Prediction. The approach deals with non-stationarity in hierarchical reinforcement learning by generating primitive informed subgoal dataset for higher level, and subsequently applying inverse reinforcement learning regularization with the reinforcement learning objective.
 
 ### 1) Installation and Usage
-1.  This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run these commands:
+This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run these commands:
   ```Shell
   # install the code
   git clone -b master --single-branch https://github.com/Utsavz/CRISP.git
@@ -17,7 +19,7 @@ This is a tensorflow based implementation for our approach: Curriculum inducing 
   bash download.sh
   ```
 
-2. Running demo
+#### 2). Running demo
   ```Shell
   # For Maze navigation environment
   python experiment/play.py --dir=maze_crisp_0 --render=1 --rollouts=10
@@ -40,7 +42,7 @@ This is a tensorflow based implementation for our approach: Curriculum inducing 
 
   ```
 
-3. Training code
+#### 3). Training code
   ```Shell
   # For Maze navigation environment
   python experiment/train.py --env="FetchMazeReach-v1" --logdir="pick_crisp_0" --n_epochs=2100 --num_cpu=1 --seed=0 --bc_loss=1 --bc_loss_upper=1  --adversarial_loss=1 --num_hrl_layers=2 --populate=1
@@ -63,7 +65,7 @@ This is a tensorflow based implementation for our approach: Curriculum inducing 
   
   ```
 
-3. Plot progress
+#### 3). Plot progress
   ```Shell
   # For Maze navigation environment
   python experiment/plot.py --dir1=maze_crisp_0:crisp --plot_name="maze"
@@ -85,3 +87,23 @@ This is a tensorflow based implementation for our approach: Curriculum inducing 
 
   
   ```
+
+#### 4). Results: Success rate performance
+
+  Maze navigation environment
+  <img src="figs/maze_margin_success_rate.gif" width="300">
+
+  Pick and place environment
+  <img src="figs/pick_margin_success_rate.gif" width="300">
+
+  Bin environment
+  <img src="figs/bin_margin_success_rate.gif" width="300">
+
+  Hollow environment
+  <img src="figs/hollow_margin_success_rate.gif" width="300">
+
+  Rope manipulation environment
+  <img src="figs/rope_margin_success_rate.gif" width="300">
+
+  Franka kitchen environment
+  <img src="figs/kitchen_margin_success_rate.gif" width="300">
