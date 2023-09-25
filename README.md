@@ -20,6 +20,7 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
   ```
 
 ### 2). Running demo
+To run the demo, use the following scripts:
   ```Shell
   # For Maze navigation environment
   python experiment/play.py --dir=maze_crisp_0 --render=1 --rollouts=10
@@ -43,6 +44,7 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
   ```
 
 ### 3). Training code
+To train, use the following scripts. For baselines, change the parameters accordingly:
   ```Shell
   # For Maze navigation environment
   python experiment/train.py --env="FetchMazeReach-v1" --logdir="pick_crisp_0" --n_epochs=2100 --num_cpu=1 --seed=0 --bc_loss=1 --bc_loss_upper=1  --adversarial_loss=1 --num_hrl_layers=2 --populate=1
@@ -66,6 +68,7 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
   ```
 
 ### 3). Plot progress
+To plot the success rate performances, use the following scripts:
   ```Shell
   # For Maze navigation environment
   python experiment/plot.py --dir1=maze_crisp_0:crisp --plot_name="maze"
@@ -89,6 +92,7 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
   ```
 
 ### 4). Results: Success rate performance
+Here we provide the success rate performance results for various environments:
 
   #### Maze navigation environment
 
