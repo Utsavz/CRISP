@@ -91,19 +91,19 @@ This code is based on [TensorFlow](https://www.tensorflow.org/). To install, run
 #### 4). Results: Success rate performance
 
   Maze navigation environment
-  <img src="figs/maze_margin_success_rate.gif" width="300">
+  <img src="figs/maze_margin_success_rate.pdf" width="300">
 
   Pick and place environment
-  <img src="figs/pick_margin_success_rate.gif" width="300">
+  <img src="figs/pick_margin_success_rate.pdf" width="300">
 
   Bin environment
-  <img src="figs/bin_margin_success_rate.gif" width="300">
+  <img src="figs/bin_margin_success_rate.pdf" width="300">
 
   Hollow environment
-  <img src="figs/hollow_margin_success_rate.gif" width="300">
+  <img src="figs/hollow_margin_success_rate.pdf" width="300">
 
   Rope manipulation environment
-  <img src="figs/rope_margin_success_rate.gif" width="300">
+  <img src="figs/rope_margin_success_rate.pdf" width="300">
 
   Franka kitchen environment
-  <img src="figs/kitchen_margin_success_rate.gif" width="300">
+  <img src="figs/kitchen_margin_success_rate.pdf" width="300">
