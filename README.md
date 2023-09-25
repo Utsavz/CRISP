@@ -1,7 +1,9 @@
 ## CRISP: Curriculum inducing Primitive Informed Subgoal Prediction
 ### Code repository for CRISP
 
-<img src="figs/crisp_main_page.gif" width="500">
+<p align="center">
+  <img src="figs/crisp_main_page.gif" width="500">
+</p>
 
 This is a tensorflow based implementation for our approach: Curriculum inducing Primitive Informed Subgoal Prediction. The approach deals with non-stationarity in hierarchical reinforcement learning by generating primitive informed subgoal dataset for higher level, and subsequently applying inverse reinforcement learning regularization with the reinforcement learning objective.
 
@@ -96,24 +98,36 @@ Here we provide the success rate performance results for various environments:
 
   #### Maze navigation environment
 
-  <img src="figs/maze_reset_success_rate.png" width="500">
+  <p align="center">
+    <img src="figs/maze_reset_success_rate.png" width="500">
+  </p>
 
   #### Pick and place environment
 
-  <img src="figs/pick_reset_success_rate.png" width="500">
+  <p align="center">
+    <img src="figs/pick_reset_success_rate.png" width="500">
+  </p>
 
   #### Bin environment
 
-  <img src="figs/bin_reset_success_rate.png" width="500">
+  <p align="center">
+    <img src="figs/bin_reset_success_rate.png" width="500">
+  </p>
 
   #### Hollow environment
 
-  <img src="figs/hollow_reset_success_rate.png" width="500">
+  <p align="center">
+    <img src="figs/hollow_reset_success_rate.png" width="500">
+  </p>
 
   #### Rope manipulation environment
 
-  <img src="figs/rope_reset_success_rate.png" width="500">
+  <p align="center">
+    <img src="figs/rope_reset_success_rate.png" width="500">
+  </p>
 
   #### Franka kitchen environment
 
-  <img src="figs/kitchen_reset_success_rate.png" width="500">
+  <p align="center">
+    <img src="figs/kitchen_reset_success_rate.png" width="500">
+  </p>
