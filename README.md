@@ -98,31 +98,31 @@ Here we provide the success rate performance results for various environments:
   #### Maze navigation environment
 
   <p align="center">
-    <img src="figs/maze_reset_success_rate.png" width="500">
+    <img src="figs/maze_reset_success_rate.png" width="200">
   </p>
 
   #### Pick and place environment
 
   <p align="center">
-    <img src="figs/pick_reset_success_rate.png" width="500">
+    <img src="figs/pick_reset_success_rate.png" width="200">
   </p>
 
   #### Bin environment
 
   <p align="center">
-    <img src="figs/bin_reset_success_rate.png" width="500">
+    <img src="figs/bin_reset_success_rate.png" width="200">
   </p>
 
   #### Hollow environment
 
   <p align="center">
-    <img src="figs/hollow_reset_success_rate.png" width="500">
+    <img src="figs/hollow_reset_success_rate.png" width="200">
   </p>
 
   #### Rope manipulation environment
 
   <p align="center">
-    <img src="figs/rope_reset_success_rate.png" width="500">
+    <img src="figs/rope_reset_success_rate.png" width="200">
   </p>
 
   #### Franka kitchen environment
