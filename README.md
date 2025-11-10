@@ -54,7 +54,7 @@ To train, use the following scripts. For baselines, change the parameters accord
   python experiment/train.py --env="FetchPickAndPlace-v1" --logdir="pick_crisp_0" --n_epochs=2100 --num_cpu=1 --seed=0 --bc_loss=1 --bc_loss_upper=1  --adversarial_loss=1 --num_hrl_layers=2 --populate=1
 
   # For bin environment
-  python experiment/train.py --env="FetchPickAndPlaceBin-v1" --logdir="bin_crisp_0" --n_epochs=2200 --num_cpu=1 --seed=0 --bc_loss=1 --bc_loss_upper=1  --adversarial_loss=1 --num_hrl_layers=2 --populate=1
+  python experiment/train.py --env="FetchPickAndPlaceBin-v1" --logdir="bin_crisp_0" --n_epochs=2400 --num_cpu=1 --seed=0 --bc_loss=1 --bc_loss_upper=1  --adversarial_loss=1 --num_hrl_layers=2 --populate=1
 
   # For hollow environment
   python experiment/train.py --env="FetchPickAndPlaceHollow-v1" --logdir="hollow_crisp_0" --n_epochs=3500 --num_cpu=1 --seed=0 --bc_loss=1 --bc_loss_upper=1  --adversarial_loss=1 --num_hrl_layers=2 --populate=1
@@ -98,35 +98,35 @@ Here we provide the success rate performance results for various environments:
   #### Maze navigation environment
 
   <p align="center">
-    <img src="figs/maze_reset_success_rate.png" width="200">
+    <img src="figs/maze_reset_success_rate.png" width="400">
   </p>
 
   #### Pick and place environment
 
   <p align="center">
-    <img src="figs/pick_reset_success_rate.png" width="200">
+    <img src="figs/pick_reset_success_rate.png" width="400">
   </p>
 
   #### Bin environment
 
   <p align="center">
-    <img src="figs/bin_reset_success_rate.png" width="200">
+    <img src="figs/bin_reset_success_rate.png" width="400">
   </p>
 
   #### Hollow environment
 
   <p align="center">
-    <img src="figs/hollow_reset_success_rate.png" width="200">
+    <img src="figs/hollow_reset_success_rate.png" width="400">
   </p>
 
   #### Rope manipulation environment
 
   <p align="center">
-    <img src="figs/rope_reset_success_rate.png" width="200">
+    <img src="figs/rope_reset_success_rate.png" width="400">
   </p>
 
   #### Franka kitchen environment
 
   <p align="center">
-    <img src="figs/kitchen_reset_success_rate.png" width="500">
+    <img src="figs/kitchen_reset_success_rate.png" width="400">
   </p>
