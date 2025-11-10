@@ -1,6 +1,4 @@
-## [AAAI 2026] Official codebase for "CRISP: Curriculum inducing Primitive Informed Subgoal Prediction".
-
-### Code repository for CRISP
+### [AAAI 2026] Official codebase for "CRISP: Curriculum inducing Primitive Informed Subgoal Prediction"
 
 <p align="center">
   <img src="figs/crisp_main_page.gif" width="500">
